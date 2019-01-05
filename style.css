@@ -1,4 +1,3 @@
-/* Base CSS */
 .alignleft {
     float: left;
     margin-right: 15px;
@@ -11,11 +10,13 @@
     display: block;
     margin: 0 auto 15px;
 }
-a:focus { outline: 0 solid }
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
 img {
     max-width: 100%;
     height: auto;
 }
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
 h1,
 h2,
 h3,
@@ -25,14 +26,6 @@ h6 {
     margin: 0 0 15px;
     font-weight: 700;
 }
-html,
-body { height: 100% }
-body {
-
-}
-a:hover { text-decoration: none }
-
-/* Remove Chrome Input Field's Unwanted Yellow Background Color */
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+p:last-child {
+    margin-bottom: 0
 }
